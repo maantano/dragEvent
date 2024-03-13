@@ -10,9 +10,10 @@ export default function DNDPage() {
       </div>
       <DNDMatchExample />
 
-      <div className="mt-64 mr-5 text-right">
+      <div className="mt-44 mr-5 text-right">
         <p>평안(bepyan)님 많은 도움 받았습니다.</p>
         <p>한번 방문해보세요! 좋은글이 많습니다.</p>
+
         <Link href={'http://bepyan.me'} target="_blank">
           bepyan.me
         </Link>
