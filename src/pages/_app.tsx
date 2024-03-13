@@ -41,21 +41,21 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
         />
       </Head>
-      {/* {!main ? (
+      {!main ? (
         <DNDPage />
-      ) : ( */}
-      <div className="mx-auto max-w-3xl pb-10">
-        <div className="flex flex-wrap items-center gap-4 p-4">
-          <ALink href="/" title="Drag" />
-          <ALink href="/touch" title="Touch" />
-          <ALink href="/resize" title="Resize" />
-          <ALink href="/carousel" title="Carousel" />
-          {/* <ALink href="/dnd" title="DND" /> */}
-          <ALink href="/todo" title="TODO" />
+      ) : (
+        <div className="mx-auto max-w-3xl pb-10">
+          <div className="flex flex-wrap items-center gap-4 p-4">
+            <ALink href="/" title="Drag" />
+            <ALink href="/touch" title="Touch" />
+            <ALink href="/resize" title="Resize" />
+            <ALink href="/carousel" title="Carousel" />
+            {/* <ALink href="/dnd" title="DND" /> */}
+            <ALink href="/todo" title="TODO" />
+          </div>
+          <Component {...pageProps} />
         </div>
-        <Component {...pageProps} />
-      </div>
-      {/* )} */}
+      )}
     </MainContext.Provider>
   );
 }
